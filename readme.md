@@ -9,7 +9,8 @@ For [AVR128DA48 CURIOSITY NANO EVALUATION KIT](https://www.microchip.com/en-us/d
 
 Boards have different pin configuration. Direct move not available.
 
-^ pin          ^ AVR128DA48  ^ AVR128DB48  ^
+| pin          | AVR128DA48  | AVR128DB48  |
+|--------------|-------------|-------------|
 | Yellow LED0  | PC6         | PB3         | 
 | User switch (SW0)  | PC7   | PB2         | 
 | UART RX      | PC0         | PB0         | 
@@ -39,11 +40,11 @@ PWN examples
 Нельзя перенести напрямую. LED подключен к PB3 - можно подключить к верхней половине TCA в SPLIT режиме.
 Для проверки нужно подключить внешний LED на порт PC6, как на CN AVR128DA48.
 
-####AVR\_DB\_LED\_blink\_PWM
+### AVR\_DB\_LED\_blink\_PWM
 
 [avr128da48-led-dimming-pwm-example](https://github.com/microchip-pic-avr-examples/avr128da48-led-blink-pwm-example)
 
-####AVR\_DB\_LED\_dimming\_PWM
+### AVR\_DB\_LED\_dimming\_PWM
 
 [avr128da48-led-dimming-pwm-example](https://github.com/microchip-pic-avr-examples/avr128da48-led-dimming-pwm-example)
 
