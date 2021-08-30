@@ -21,6 +21,16 @@ AVR\_DB\_LED\_blink\_delay
 
 [avr128da48-led-blink-delay-example](https://github.com/microchip-pic-avr-examples/avr128da48-led-blink-delay-example/)
 
+AVR\_DB\_WakeUp
+---------------
+
+[avr128da48-ext-int-wakeup-example](https://github.com/microchip-pic-avr-examples/avr128da48-ext-int-wakeup-example)
+
+Demonstrates a simple implementation of a sleep operation with an external interrupt triggering an LED blink.
+
+* SLPCTRL
+* Configured for entering Idle Mode when SLEEP instruction is executed
+
 AVR\_DA\_GPIO\_Debouncing
 -------------------------
  

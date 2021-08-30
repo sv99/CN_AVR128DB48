@@ -19,6 +19,10 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR-DA_LED_blink_PWM", "AVR
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR_DB_LED_dimming_pwm", "AVR_DB_LED_dimming_pwm\AVR_DB_LED_dimming_pwm.cproj", "{3CC89462-E2C6-484B-B2D1-40D1535ACE5E}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR_DB_WakeUp", "AVR_DB_WakeUp\AVR_DB_WakeUp.cproj", "{90600E0C-6AC5-4AB9-B3DF-AC0A1291EB6A}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR_DB_LED_blink_interrupt", "AVR_DB_LED_blink_interrupt\AVR_DB_LED_blink_interrupt.cproj", "{CCA47A95-CE69-40CB-BA8E-D3A9748ACABB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -45,6 +49,14 @@ Global
 		{3CC89462-E2C6-484B-B2D1-40D1535ACE5E}.Debug|AVR.Build.0 = Debug|AVR
 		{3CC89462-E2C6-484B-B2D1-40D1535ACE5E}.Release|AVR.ActiveCfg = Release|AVR
 		{3CC89462-E2C6-484B-B2D1-40D1535ACE5E}.Release|AVR.Build.0 = Release|AVR
+		{90600E0C-6AC5-4AB9-B3DF-AC0A1291EB6A}.Debug|AVR.ActiveCfg = Debug|AVR
+		{90600E0C-6AC5-4AB9-B3DF-AC0A1291EB6A}.Debug|AVR.Build.0 = Debug|AVR
+		{90600E0C-6AC5-4AB9-B3DF-AC0A1291EB6A}.Release|AVR.ActiveCfg = Release|AVR
+		{90600E0C-6AC5-4AB9-B3DF-AC0A1291EB6A}.Release|AVR.Build.0 = Release|AVR
+		{CCA47A95-CE69-40CB-BA8E-D3A9748ACABB}.Debug|AVR.ActiveCfg = Debug|AVR
+		{CCA47A95-CE69-40CB-BA8E-D3A9748ACABB}.Debug|AVR.Build.0 = Debug|AVR
+		{CCA47A95-CE69-40CB-BA8E-D3A9748ACABB}.Release|AVR.ActiveCfg = Release|AVR
+		{CCA47A95-CE69-40CB-BA8E-D3A9748ACABB}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
