@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A7D63B3B-A651-4858-A891-938112796B08}"
+	ProjectSection(SolutionItems) = preProject
+		.clang-format = .clang-format
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "AVR_DB_LED_blink_delay", "AVR_DB_LED_blink_delay\AVR_DB_LED_blink_delay.cppproj", "{5C656A4E-8614-4A04-B6C5-67415A7A24EE}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "AVR_DB_GPIO_DEBOUNCING", "AVR_DB_GPIO_DEBOUNCING\AVR_DB_GPIO_DEBOUNCING.cppproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "XOSCHF_with_external_crystal", "XOSCHF_with_external_crystal\XOSCHF_with_external_crystal.cproj", "{FEE20BA9-0CCA-4B4E-A66E-6EB9DC4FE616}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR-DA_LED_blink_PWM", "AVR-DA_LED_blink_PWM\AVR-DA_LED_blink_PWM.cproj", "{EEA4B77B-A291-4459-B3CA-4982B9C5C4B8}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR_DB_LED_dimming_pwm", "AVR_DB_LED_dimming_pwm\AVR_DB_LED_dimming_pwm.cproj", "{3CC89462-E2C6-484B-B2D1-40D1535ACE5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C656A4E-8614-4A04-B6C5-67415A7A24EE}.Debug|AVR.ActiveCfg = Debug|AVR
+		{5C656A4E-8614-4A04-B6C5-67415A7A24EE}.Debug|AVR.Build.0 = Debug|AVR
+		{5C656A4E-8614-4A04-B6C5-67415A7A24EE}.Release|AVR.ActiveCfg = Release|AVR
+		{5C656A4E-8614-4A04-B6C5-67415A7A24EE}.Release|AVR.Build.0 = Release|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
+		{FEE20BA9-0CCA-4B4E-A66E-6EB9DC4FE616}.Debug|AVR.ActiveCfg = Debug|AVR
+		{FEE20BA9-0CCA-4B4E-A66E-6EB9DC4FE616}.Debug|AVR.Build.0 = Debug|AVR
+		{FEE20BA9-0CCA-4B4E-A66E-6EB9DC4FE616}.Release|AVR.ActiveCfg = Release|AVR
+		{FEE20BA9-0CCA-4B4E-A66E-6EB9DC4FE616}.Release|AVR.Build.0 = Release|AVR
+		{EEA4B77B-A291-4459-B3CA-4982B9C5C4B8}.Debug|AVR.ActiveCfg = Debug|AVR
+		{EEA4B77B-A291-4459-B3CA-4982B9C5C4B8}.Debug|AVR.Build.0 = Debug|AVR
+		{EEA4B77B-A291-4459-B3CA-4982B9C5C4B8}.Release|AVR.ActiveCfg = Release|AVR
+		{EEA4B77B-A291-4459-B3CA-4982B9C5C4B8}.Release|AVR.Build.0 = Release|AVR
+		{3CC89462-E2C6-484B-B2D1-40D1535ACE5E}.Debug|AVR.ActiveCfg = Debug|AVR
+		{3CC89462-E2C6-484B-B2D1-40D1535ACE5E}.Debug|AVR.Build.0 = Debug|AVR
+		{3CC89462-E2C6-484B-B2D1-40D1535ACE5E}.Release|AVR.ActiveCfg = Release|AVR
+		{3CC89462-E2C6-484B-B2D1-40D1535ACE5E}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
