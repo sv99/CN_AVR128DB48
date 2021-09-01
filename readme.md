@@ -1,6 +1,7 @@
 AVR128DB48 Curiosity Nano
 =========================
 
+Single main.c file examples for 
 [AVR128DB48 CURIOSITY NANO EVALUATION KIT](https://www.microchip.com/en-us/development-tool/EV35L43A) Part Number: EV35L43A
 
 Have only 43 projects in the [Microchip PIC & AVR Examples](https://github.com/microchip-pic-avr-examples) mainly for opamp and mvio.
@@ -13,6 +14,7 @@ Boards have different pin configuration. Direct move not available.
 |--------------|-------------|-------------|
 | Yellow LED0  | PC6         | PB3         | 
 | User switch (SW0)  | PC7   | PB2         | 
+| UART         | USART1      | USART3      | 
 | UART RX      | PC0         | PB0         | 
 | UART TX      | PC1         | PB1         |
 
@@ -56,7 +58,7 @@ XOSCHF\_with\_external\_crystal
 One of the [avr128db48-getting-started-with-xoschf](https://github.com/microchip-pic-avr-examples/avr128db48-getting-started-with-xoschf)
 lab.
 
-PWN examples
+PWM examples
 ------------
 
 Нельзя перенести напрямую. LED подключен к PB3 - можно подключить к верхней половине TCA в SPLIT режиме.
@@ -70,6 +72,25 @@ PWN examples
 
 [avr128da48-led-dimming-pwm-example](https://github.com/microchip-pic-avr-examples/avr128da48-led-dimming-pwm-example)
 
+AVR\_DB\_usart
+--------------
 
- 
+Based on [avr128da48-usart-exampl](https://github.com/microchip-pic-avr-examples/avr128da48-usart-example)
+
+**DTR ON** in the terminal! 
+
+AVR\_DB\_adc
+------------
+
+Based on:
+
+* Lab [avr128da48-using-12-bit-adc](https://github.com/microchip-pic-avr-examples/avr128da48-using-12-bit-adc)
+* [avr128da48-adc-differential-example](https://github.com/microchip-pic-avr-examples/avr128da48-adc-differential-example)
+* [avr128da48-adc-accumulation-example](https://github.com/microchip-pic-avr-examples/avr128da48-adc-accumulation-example)
+* [avr128da48-adc-evsys-example](https://github.com/microchip-pic-avr-examples/avr128da48-adc-evsys-example)
+
+Input pin PD0 - to the variable resistor connected to the 3.3V.
+
+Using printf - need add -lprintf_flt to the linker.
+
 

@@ -24,6 +24,10 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR_DB_WakeUp", "AVR_DB_Wak
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR_DB_LED_blink_interrupt", "AVR_DB_LED_blink_interrupt\AVR_DB_LED_blink_interrupt.cproj", "{CCA47A95-CE69-40CB-BA8E-D3A9748ACABB}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR_DB_usart", "AVR_DB_usart\AVR_DB_usart.cproj", "{2552C532-C99D-4E5D-A4D7-ABBB984D15B8}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR_DB_adc", "AVR_DB_adc\AVR_DB_adc.cproj", "{74D77ADF-F060-4D65-99E4-BF35B10FB4AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -58,6 +62,14 @@ Global
 		{CCA47A95-CE69-40CB-BA8E-D3A9748ACABB}.Debug|AVR.Build.0 = Debug|AVR
 		{CCA47A95-CE69-40CB-BA8E-D3A9748ACABB}.Release|AVR.ActiveCfg = Release|AVR
 		{CCA47A95-CE69-40CB-BA8E-D3A9748ACABB}.Release|AVR.Build.0 = Release|AVR
+		{2552C532-C99D-4E5D-A4D7-ABBB984D15B8}.Debug|AVR.ActiveCfg = Debug|AVR
+		{2552C532-C99D-4E5D-A4D7-ABBB984D15B8}.Debug|AVR.Build.0 = Debug|AVR
+		{2552C532-C99D-4E5D-A4D7-ABBB984D15B8}.Release|AVR.ActiveCfg = Release|AVR
+		{2552C532-C99D-4E5D-A4D7-ABBB984D15B8}.Release|AVR.Build.0 = Release|AVR
+		{74D77ADF-F060-4D65-99E4-BF35B10FB4AE}.Debug|AVR.ActiveCfg = Debug|AVR
+		{74D77ADF-F060-4D65-99E4-BF35B10FB4AE}.Debug|AVR.Build.0 = Debug|AVR
+		{74D77ADF-F060-4D65-99E4-BF35B10FB4AE}.Release|AVR.ActiveCfg = Release|AVR
+		{74D77ADF-F060-4D65-99E4-BF35B10FB4AE}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
