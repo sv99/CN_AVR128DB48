@@ -28,6 +28,9 @@
 #include <util/delay.h>
 #include <string.h>
 
+/* default memory mapped segment */
+#define MAPPED_PROGMEM __attribute__((__section__(".FLMAP_SECTION3")))
+
 #define LED_PORT   PORTB
 #define LED_VPORT  VPORTB
 #define LED_CTRL   PORTB.PIN3CTRL
@@ -47,7 +50,7 @@
 
 void LOGGER_init(void);
 void LOGGER_sendChar(char c);
-void LOGGER_sendString(char* str);
+void LOGGER_sendString(const char* str);
 
 void LOGGER_init(void)
 {
@@ -70,12 +73,15 @@ void LOGGER_sendChar(char c)
     LOGGER.TXDATAL = c;
 }
 
-void LOGGER_sendString(char* str)
+void LOGGER_sendString(const char* str)
 {
     for (size_t i = 0; i < strlen(str); i++) {
         LOGGER_sendChar(str[i]);
     }
 }
+
+const char* hello = "Hello from sram!\r\n";
+const char MAPPED_PROGMEM hello1[] = "Hello from flash!\r\n";
 
 int main(void)
 {
@@ -85,7 +91,8 @@ int main(void)
     LOGGER_init();
 
     while (1) {
-        LOGGER_sendString("Hello World!\r\n");
+        LOGGER_sendString(hello);
+        LOGGER_sendString(&hello1[0]);
         LED_PORT.OUTTGL = LED_PIN_bm;
         _delay_ms(1000);
     }

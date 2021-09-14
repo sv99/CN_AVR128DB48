@@ -28,6 +28,8 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR_DB_usart", "AVR_DB_usar
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR_DB_adc", "AVR_DB_adc\AVR_DB_adc.cproj", "{74D77ADF-F060-4D65-99E4-BF35B10FB4AE}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AVR_DB_usart_memory_mappped", "AVR_DB_usart_memory_mappped\AVR_DB_usart_memory_mappped.cproj", "{9C7171A3-DEF1-4729-8179-3A6CB560BF8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -70,6 +72,10 @@ Global
 		{74D77ADF-F060-4D65-99E4-BF35B10FB4AE}.Debug|AVR.Build.0 = Debug|AVR
 		{74D77ADF-F060-4D65-99E4-BF35B10FB4AE}.Release|AVR.ActiveCfg = Release|AVR
 		{74D77ADF-F060-4D65-99E4-BF35B10FB4AE}.Release|AVR.Build.0 = Release|AVR
+		{9C7171A3-DEF1-4729-8179-3A6CB560BF8E}.Debug|AVR.ActiveCfg = Debug|AVR
+		{9C7171A3-DEF1-4729-8179-3A6CB560BF8E}.Debug|AVR.Build.0 = Debug|AVR
+		{9C7171A3-DEF1-4729-8179-3A6CB560BF8E}.Release|AVR.ActiveCfg = Release|AVR
+		{9C7171A3-DEF1-4729-8179-3A6CB560BF8E}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

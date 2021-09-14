@@ -93,4 +93,19 @@ Input pin PD0 - to the variable resistor connected to the 3.3V.
 
 Using printf - need add -lprintf_flt to the linker.
 
+AVR\_DB\_usart\_memory\_mapped
+------------------------------
 
+Копия AVR\_DB\_usart - добавлен вывод константы из отображенной в память верхней трети FLASH.
+Реализация взята из [DxCore - Arduino support for the NEW AVR DA](https://github.com/SpenceKonde/DxCore)
+
+```c
+/* default memory mapped segment */
+#define MAPPED_PROGMEM __attribute__((__section__(".FLMAP_SECTION3")))
+
+const char MAPPED_PROGMEM hello1[] = "Hello from flash!\r\n";
+
+LOGGER_sendString(&hello1[0]);
+```
+
+Add Linker->Memory settings FLASH segment .FLMAP_SECTION3=0xC000 
