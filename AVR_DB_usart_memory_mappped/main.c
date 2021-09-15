@@ -26,10 +26,12 @@
 
 #include <avr/io.h>
 #include <util/delay.h>
+
 #include <string.h>
 
 /* default memory mapped segment */
-#define MAPPED_PROGMEM __attribute__((__section__(".FLMAP_SECTION3")))
+#define MAPPED_PROGMEM     __attribute__((__section__(".FLMAP_SECTION3")))
+#define CHAR_PTR(char_arr) (&char_arr[0])
 
 #define LED_PORT   PORTB
 #define LED_VPORT  VPORTB
@@ -80,7 +82,7 @@ void LOGGER_sendString(const char* str)
     }
 }
 
-const char* hello = "Hello from sram!\r\n";
+const char hello[] = "Hello from sram!\r\n";
 const char MAPPED_PROGMEM hello1[] = "Hello from flash!\r\n";
 
 int main(void)
@@ -90,9 +92,21 @@ int main(void)
 
     LOGGER_init();
 
+/* check C version */
+/* code from Packt.Extreme.C.2019, by default c11 */
+#if __STDC_VERSION__ >= 201710L
+    LOGGER_sendString("Hello World from C18!\n");
+#elif __STDC_VERSION__ >= 201112L
+    LOGGER_sendString("Hello World from C11!\n");
+#elif __STDC_VERSION__ >= 199901L
+    LOGGER_sendString("Hello World from C99!\n");
+#else
+    LOGGER_sendString("Hello World from C89/C90!\n");
+#endif
+
     while (1) {
-        LOGGER_sendString(hello);
-        LOGGER_sendString(&hello1[0]);
+        LOGGER_sendString(CHAR_PTR(hello));
+        LOGGER_sendString(CHAR_PTR(hello1));
         LED_PORT.OUTTGL = LED_PIN_bm;
         _delay_ms(1000);
     }

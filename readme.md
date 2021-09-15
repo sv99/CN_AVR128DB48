@@ -109,3 +109,6 @@ LOGGER_sendString(&hello1[0]);
 ```
 
 Add Linker->Memory settings FLASH segment .FLMAP_SECTION3=0xC000 
+
+Add code from [Packt - Extreme C](https://subscription.packtpub.com/book/programming/9781789343625/1) for checking C standard version.
+By default AVR GNU Compiler 5.4.0 have -std=c11.
